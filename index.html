@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Bewerbung MysteryMC Team</title>
+    <style>
+        body { font-family: Arial; margin: 20px; background: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        input, select, textarea, button {
+            width: 100%; margin-bottom: 15px; padding: 10px; border-radius: 5px; border: 1px solid #ccc;
+        }
+        button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        img { max-width: 100%; border-radius: 10px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="https://www.dropbox.com/scl/fi/s1d3kd8xyz6lv2dujq58o/eUOp7684MgNn.png?rlkey=6qo0ly2hpk5j66l8276vjmake&raw=1" alt="MysteryMC">
+    <h2>Bewerbung fürs MysteryMC Team</h2>
+    <form action="submit.php" method="POST">
+        <label>Deine E-Mail-Adresse:</label>
+        <input type="email" name="email" required>
+
+        <label>Als was willst du dich bewerben?</label>
+        <select name="bewerbung" required>
+            <option value="Developer">Developer</option>
+            <option value="Mod">Mod</option>
+            <option value="Supporter">Supporter</option>
+        </select>
+
+        <label>Wie ist dein Ingame Name?</label>
+        <input type="text" name="ingame" required>
+
+        <label>Wie ist dein Discord Name?</label>
+        <input type="text" name="discord" required>
+
+        <label>Wie alt bist du?</label>
+        <input type="text" name="alter" required>
+
+        <label>Seit wann spielst du schon auf dem Server?</label>
+        <input type="text" name="seitwann" required>
+
+        <label>Warum willst du bei uns [ausgewählter Rang] werden?</label>
+        <textarea name="warum" required></textarea>
+
+        <label>Hast du bereits Erfahrung als [ausgewählter Rang] gesammelt?</label>
+        <textarea name="erfahrung" required></textarea>
+
+        <label>Was sind Stärken von dir?</label>
+        <textarea name="staerken" required></textarea>
+
+        <label>Was sind deine Schwächen?</label>
+        <textarea name="schwaechen" required></textarea>
+
+        <label>Was unterscheidet dich von anderen Bewerbern?</label>
+        <textarea name="unterscheidung" required></textarea>
+
+        <button type="submit">Absenden</button>
+    </form>
+</div>
+</body>
+</html>
